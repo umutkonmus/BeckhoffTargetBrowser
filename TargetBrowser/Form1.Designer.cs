@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.treeViewSymbols = new System.Windows.Forms.TreeView();
             this.btnLoad = new System.Windows.Forms.Button();
             this.cbFlat = new System.Windows.Forms.CheckBox();
@@ -53,7 +52,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tbNetId = new System.Windows.Forms.TextBox();
-            this.disconnectTimer = new System.Windows.Forms.Timer(this.components);
             this.pbTcState = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
@@ -313,11 +311,6 @@
             this.tbNetId.Size = new System.Drawing.Size(195, 27);
             this.tbNetId.TabIndex = 14;
             // 
-            // disconnectTimer
-            // 
-            this.disconnectTimer.Enabled = true;
-            this.disconnectTimer.Tick += new System.EventHandler(this.disconnectTimer_Tick);
-            // 
             // pbTcState
             // 
             this.pbTcState.Image = global::TargetBrowser.Properties.Resources.tcConfigImg;
@@ -389,7 +382,6 @@
         private System.Windows.Forms.Button btnWrite;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tbNetId;
-        private System.Windows.Forms.Timer disconnectTimer;
         private System.Windows.Forms.ComboBox cbValue;
         private System.Windows.Forms.PictureBox pbTcState;
         private System.Windows.Forms.GroupBox groupBox2;

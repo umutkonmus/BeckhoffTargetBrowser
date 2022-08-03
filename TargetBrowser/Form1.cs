@@ -20,6 +20,7 @@ namespace TargetBrowser
         string PLC1;
         int iPlcState; // 0=Config 1=Run
         object selectedNode;
+        Timer disconnectTimer = new Timer();
 
         private void SetSymbolInfo(ITcAdsSymbol symbol)
         {
@@ -72,7 +73,7 @@ namespace TargetBrowser
             return node;
         }
 
-        void init()
+        private void Form1_Load(object sender, EventArgs e)
         {
             try
             {
@@ -81,11 +82,6 @@ namespace TargetBrowser
                 baglan();
             }
             catch { adsClient.Disconnect(); }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            init();
         }
 
         void writePlcState(int inPlcState)
