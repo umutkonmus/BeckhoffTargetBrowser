@@ -11,3 +11,6 @@ High-level interface for Beckhoff's TwinCAT.Ads
 ![Interface](https://user-images.githubusercontent.com/77108177/142585436-d3bf0208-2cbb-4243-9993-c4a62b2311f4.png)
 
 If you don't enter any AMS NetId, when you click on 'connect' button, It will try to connect your local TwinCAT System.
+
+## Tech Stack
+- C# TwinCAT Ads Libary 
